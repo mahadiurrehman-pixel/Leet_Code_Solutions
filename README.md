@@ -1,34 +1,49 @@
-# Two Sum
+# Problem: Sum and Multiply
 
 ## Intuition
-The simplest way is to check every possible pair of numbers. If the sum of a pair equals the target, return their indices immediately.
+The result depends on two values:
+- The sum of all digits.
+- The number formed after removing all `0` digits.
+
+Multiply these two values to obtain the final answer.
 
 ## Approach
-1. Use two nested loops.
-2. The outer loop selects the first element.
-3. The inner loop checks every element after it.
-4. If the sum of the two elements equals the target, return their indices.
-5. If no valid pair is found, return an empty vector.
+1. Convert the integer to a string.
+2. Iterate through each digit.
+3. Add every digit to the sum.
+4. Append only non-zero digits to a new string.
+5. If the new string is empty, return `0`.
+6. Convert the string back to an integer.
+7. Return the product of the filtered number and the digit sum.
 
 ## Complexity
 
-- **Time Complexity:** `O(n²)`
-- **Space Complexity:** `O(1)`
+- **Time Complexity:** `O(d)`
+- **Space Complexity:** `O(d)`
 
-## Code
+Where `d` is the number of digits.
+
+## Code (C++)
 
 ```cpp
 class Solution {
 public:
-    vector<int> twoSum(vector<int>& nums, int target) {
-        for (int i = 0; i < nums.size(); i++) {
-            for (int j = i + 1; j < nums.size(); j++) {
-                if (nums[i] + nums[j] == target) {
-                    return {i, j};
-                }
+    long long sumAndMultiply(int n) {
+        string str = to_string(n);
+        string a = "";
+        long long sum = 0;
+
+        for (int i = 0; i < str.length(); i++) {
+            sum += (str[i] - '0');
+            if (str[i] != '0') {
+                a += str[i];
             }
         }
-        return {};
+
+        if (a == "") return 0;
+
+        long long num = stoll(a);
+        return num * sum;
     }
 };
 ```
