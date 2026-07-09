@@ -1,82 +1,67 @@
-# Add Two Numbers - LeetCode #2
+# LeetCode Solutions
 
-## Problem Statement
+This repository contains my LeetCode problem solutions implemented in **C++** and **Python**. The goal of this repository is to improve problem-solving skills, strengthen data structures and algorithms concepts, and maintain consistency through regular practice.
 
-You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each node contains a single digit. Add the two numbers and return the sum as a linked list.
+## Problems Solved
 
-You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+| # | Problem | Language | Difficulty | Approach |
+|---|---------|----------|------------|----------|
+| 1523 | Count Odd Numbers in an Interval Range | C++, Python | Easy | Mathematical Formula |
+| 412 | Fizz Buzz | C++, Python | Easy | Conditional Logic / Simulation |
+| 1365 | How Many Numbers Are Smaller Than the Current Number | Python | Easy | Sorting + Hash Map |
 
----
+## Solutions
 
-## Example
+### 1. Count Odd Numbers in an Interval Range
+**Approach**
+- Instead of iterating through the range, use a mathematical formula.
+- Count odd numbers from `0` to `high` and subtract the count from `0` to `low - 1`.
+- This gives the answer in constant time.
 
-**Input**
+**Time Complexity:** `O(1)`
 
-l1 = [2,4,3]
-
-l2 = [5,6,4]
-
-**Output**
-
-[7,0,8]
-
-**Explanation**
-
-342 + 465 = 807
+**Space Complexity:** `O(1)`
 
 ---
 
-## Approach
+### 2. Fizz Buzz
+**Approach**
+- Iterate from `1` to `n`.
+- Check divisibility:
+  - Divisible by both `3` and `5` → `"FizzBuzz"`
+  - Divisible by `3` → `"Fizz"`
+  - Divisible by `5` → `"Buzz"`
+  - Otherwise, return the number as a string.
 
-- Create a dummy node to simplify linked list construction.
-- Traverse both linked lists simultaneously.
-- Add corresponding digits along with any carry from the previous addition.
-- Store the current digit (`sum % 10`) in a new node.
-- Update the carry (`sum / 10`).
-- Continue until both lists are completely traversed and no carry remains.
-- Return the linked list starting after the dummy node.
+**Time Complexity:** `O(n)`
 
----
-
-## Time Complexity
-
-**O(max(n, m))**
-
-Where:
-
-- `n` = length of first linked list
-- `m` = length of second linked list
-
-Each node is visited exactly once.
+**Space Complexity:** `O(n)` *(output array)*
 
 ---
 
-## Space Complexity
+### 3. How Many Numbers Are Smaller Than the Current Number
+**Approach**
+- Sort a copy of the array.
+- Store the first occurrence index of every number in a hash map.
+- The first occurrence index represents how many numbers are smaller.
+- Build the result using the stored indices.
 
-**O(max(n, m))**
+**Time Complexity:** `O(n log n)`
 
-A new linked list is created to store the result.
-
----
-
-## Concepts Used
-
-- Singly Linked List
-- Dummy Node
-- Carry Handling
-- Simulation
-- Pointer Manipulation
+**Space Complexity:** `O(n)`
 
 ---
 
-## C++ Solution
+## Languages Used
 
-```cpp
-// See solution.cpp
-```
+- C++
+- Python
 
----
+## Purpose
 
-## Author
+- Practice Data Structures & Algorithms
+- Improve problem-solving skills
+- Prepare for coding interviews
+- Maintain a consistent LeetCode progress log
 
-Mahadi Ur Rehman
+⭐ Feel free to explore the solutions and compare different implementations.
