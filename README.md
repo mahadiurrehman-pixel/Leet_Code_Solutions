@@ -1,67 +1,90 @@
-# LeetCode Solutions
+# 🚀 LeetCode Solutions
 
-This repository contains my LeetCode problem solutions implemented in **C++** and **Python**. The goal of this repository is to improve problem-solving skills, strengthen data structures and algorithms concepts, and maintain consistency through regular practice.
+Welcome to my **LeetCode Solutions** repository! 👋
 
-## Problems Solved
-
-| # | Problem | Language | Difficulty | Approach |
-|---|---------|----------|------------|----------|
-| 1523 | Count Odd Numbers in an Interval Range | C++, Python | Easy | Mathematical Formula |
-| 412 | Fizz Buzz | C++, Python | Easy | Conditional Logic / Simulation |
-| 1365 | How Many Numbers Are Smaller Than the Current Number | Python | Easy | Sorting + Hash Map |
-
-## Solutions
-
-### 1. Count Odd Numbers in an Interval Range
-**Approach**
-- Instead of iterating through the range, use a mathematical formula.
-- Count odd numbers from `0` to `high` and subtract the count from `0` to `low - 1`.
-- This gives the answer in constant time.
-
-**Time Complexity:** `O(1)`
-
-**Space Complexity:** `O(1)`
+This repository contains my solutions to LeetCode problems implemented in **Python** and **C++**. The goal of this repository is to improve my problem-solving skills, strengthen my understanding of Data Structures & Algorithms, and prepare for coding interviews.
 
 ---
 
-### 2. Fizz Buzz
-**Approach**
-- Iterate from `1` to `n`.
-- Check divisibility:
-  - Divisible by both `3` and `5` → `"FizzBuzz"`
-  - Divisible by `3` → `"Fizz"`
-  - Divisible by `5` → `"Buzz"`
-  - Otherwise, return the number as a string.
+## 📌 Languages
 
-**Time Complexity:** `O(n)`
-
-**Space Complexity:** `O(n)` *(output array)*
+- 🐍 Python
+- ⚡ C++
 
 ---
 
-### 3. How Many Numbers Are Smaller Than the Current Number
-**Approach**
-- Sort a copy of the array.
-- Store the first occurrence index of every number in a hash map.
-- The first occurrence index represents how many numbers are smaller.
-- Build the result using the stored indices.
+## 📚 Solved Problems
 
-**Time Complexity:** `O(n log n)`
-
-**Space Complexity:** `O(n)`
+| # | Problem | Language |
+|---|---------|----------|
+| 1 | Two Sum | C++ |
+| 2 | Add Two Numbers | C++ |
+| 9 | Palindrome Number | Python |
+| 13 | Roman to Integer | Python |
+| 14 | Longest Common Prefix | Python |
+| 412 | Fizz Buzz | Python, C++ |
+| 1356 | How Many Numbers Are Smaller Than the Current Number | Python |
+| 1523 | Count Odd Numbers in an Interval Range | Python, C++ |
 
 ---
 
-## Languages Used
+## 🎯 Goals
 
-- C++
-- Python
+- Solve LeetCode problems consistently.
+- Improve algorithmic thinking.
+- Learn optimized approaches.
+- Prepare for technical interviews.
+- Track my coding progress publicly.
 
-## Purpose
+---
 
-- Practice Data Structures & Algorithms
-- Improve problem-solving skills
-- Prepare for coding interviews
-- Maintain a consistent LeetCode progress log
+## 📂 Repository Structure
 
-⭐ Feel free to explore the solutions and compare different implementations.
+```
+LeetCode-Solutions/
+│
+├── Python/
+│   ├── Palindrome Number
+│   ├── Roman to Integer
+│   ├── Longest Common Prefix
+│   ├── Fizz Buzz
+│   ├── Count Odd Numbers in an Interval Range
+│   └── ...
+│
+├── C++/
+│   ├── Two Sum
+│   ├── Add Two Numbers
+│   ├── Fizz Buzz
+│   ├── Count Odd Numbers in an Interval Range
+│   └── ...
+│
+└── README.md
+```
+
+---
+
+## 💡 Topics Covered
+
+- Arrays
+- Strings
+- Hash Maps
+- Linked Lists
+- Math
+- Simulation
+- Sorting
+- Brute Force
+- Prefix Matching
+
+---
+
+## 📈 Progress
+
+- ✅ Problems Solved: **8**
+- 🐍 Python Solutions
+- ⚡ C++ Solutions
+
+*(This repository is updated regularly as I solve more problems.)*
+
+---
+
+### ⭐ If you find this repository useful, consider giving it a star!
