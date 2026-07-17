@@ -1,15 +1,14 @@
 # 🚀 LeetCode Solutions
 
-Welcome to my **LeetCode Solutions** repository! 👋
+Welcome to my LeetCode Solutions repository! 👋
 
 This repository contains my solutions to LeetCode problems implemented in **Python** and **C++**. The goal of this repository is to improve my problem-solving skills, strengthen my understanding of Data Structures & Algorithms, and prepare for coding interviews.
 
 ---
 
 ## 📌 Languages
-
-- 🐍 Python
-- ⚡ C++
+🐍 Python
+⚡ C++
 
 ---
 
@@ -19,8 +18,8 @@ This repository contains my solutions to LeetCode problems implemented in **Pyth
 |---|---------|----------|
 | 1 | Two Sum | C++ |
 | 2 | Add Two Numbers | C++ |
-| 9 | Palindrome Number | Python |
-| 13 | Roman to Integer | Python |
+| 9 | Palindrome Number | Python, C++ |
+| 13 | Roman to Integer | Python, C++ |
 | 14 | Longest Common Prefix | Python |
 | 412 | Fizz Buzz | Python, C++ |
 | 1356 | How Many Numbers Are Smaller Than the Current Number | Python |
@@ -29,7 +28,6 @@ This repository contains my solutions to LeetCode problems implemented in **Pyth
 ---
 
 ## 🎯 Goals
-
 - Solve LeetCode problems consistently.
 - Improve algorithmic thinking.
 - Learn optimized approaches.
@@ -38,33 +36,10 @@ This repository contains my solutions to LeetCode problems implemented in **Pyth
 
 ---
 
-## 📂 Repository Structure
-
-```
-LeetCode-Solutions/
-│
-├── Python/
-│   ├── Palindrome Number
-│   ├── Roman to Integer
-│   ├── Longest Common Prefix
-│   ├── Fizz Buzz
-│   ├── Count Odd Numbers in an Interval Range
-│   └── ...
-│
-├── C++/
-│   ├── Two Sum
-│   ├── Add Two Numbers
-│   ├── Fizz Buzz
-│   ├── Count Odd Numbers in an Interval Range
-│   └── ...
-│
-└── README.md
-```
 
 ---
 
 ## 💡 Topics Covered
-
 - Arrays
 - Strings
 - Hash Maps
@@ -78,13 +53,12 @@ LeetCode-Solutions/
 ---
 
 ## 📈 Progress
-
-- ✅ Problems Solved: **8**
-- 🐍 Python Solutions
-- ⚡ C++ Solutions
+✅ Problems Solved: 8
+🐍 Python Solutions
+⚡ C++ Solutions
 
 *(This repository is updated regularly as I solve more problems.)*
 
 ---
 
-### ⭐ If you find this repository useful, consider giving it a star!
+⭐ If you find 
